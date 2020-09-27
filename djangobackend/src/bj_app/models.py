@@ -1,9 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.conf import settings
 
 class BJ_ITEM(models.Model):
     bj_id = models.AutoField(primary_key=True)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    user_id = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     bj_title = models.CharField(max_length=50)
     bj_content = models.TextField()
     bj_reportingTime = models.DateField()

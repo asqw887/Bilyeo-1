@@ -3,10 +3,10 @@
         {
             "database": "BILYEO",
             "dialect": "MariaDB",
-            "name": "database-1",
+            "name": "bilyeo-db",
             "password": "12345678",
             "port": 3306,
-            "server": "database-1.c7q246exxvmt.ap-northeast-2.rds.amazonaws.com",
+            "server": "bilyeo-db.c7q246exxvmt.ap-northeast-2.rds.amazonaws.com",
             "username": "admin"
         }
     ]

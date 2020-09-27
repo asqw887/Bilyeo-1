@@ -1,9 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.conf import settings
 
 class BG_ITEM(models.Model):
     bg_id = models.AutoField(primary_key=True)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    user_id = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     bg_title = models.CharField(max_length=50)
     bg_content = models.TextField()
     bg_rentalFee = models.IntegerField()
