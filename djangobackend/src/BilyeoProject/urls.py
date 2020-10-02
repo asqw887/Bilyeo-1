@@ -24,6 +24,7 @@ urlpatterns = [
 #   path('api/', include('bilyeoapp.api.urls')), 
     path('api/bg/', include('bg_app.api.urls')),
     path('api/bj/', include('bj_app.api.urls')),  
+    path('user/', include('bilyeoapp.api.urls')),
     path('rest-auth/', include('rest_auth.urls')), 
     path('rest-auth/registration/', include('rest_auth.registration.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
